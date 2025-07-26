@@ -163,7 +163,7 @@ You can login using either the traditional way over the [UART serial port](#231-
   # from your host PC
   # search for USB devices with "tty" string and
   # look at the second of the list (ttyUSB1)
-  dmseg | grep tty
+  dmesg | grep tty
 
   # call PuTTY on ttyUSB1 for KR260
   sudo putty /dev/ttyUSB1 -serial -sercfg 115200,8,n,1,N
